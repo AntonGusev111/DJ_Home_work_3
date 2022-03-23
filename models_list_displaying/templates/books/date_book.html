@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1><a href="/books">Каталог</a></h1>
+    </div>
+    <div class="row">
+        <div class="book col-md-4">
+            <h2>{{book.name}}</h2>
+            <p>Автор: {{book.author}}</p>
+            <p>Дата публикации: {{book.pub_date}}</p>
+        </div>
+        <a href="http://127.0.0.1:8000/books/{{previos}}">{{previos}}</a>
+        <a href="http://127.0.0.1:8000/books/{{next}}">{{next}}</a>
+    </div>
+</body>
+</html>
